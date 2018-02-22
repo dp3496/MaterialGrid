@@ -84,10 +84,8 @@ namespace MaterialGrid
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            //DataContext = _workspaceViewModel.lists.DefaultView;
             _workspaceViewModel.lists = _workspaceViewModel.Selected();
-
-            
+            DataContext = _workspaceViewModel;
         }
 
         public void Verify(int res, string cmd)
