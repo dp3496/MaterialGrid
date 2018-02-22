@@ -1,0 +1,19 @@
+﻿<Window x:Class="MaterialGrid.MainPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaterialGrid"
+        mc:Ignorable="d"
+        Title="MainPage" Height="auto" Width="786">
+    <Grid HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Main" Grid.Column="0" Margin="30" Height="100"  Click="Button_Click"/>
+        <Button Content="Users" Grid.Column="1" Margin="30" Height="100" Click="Button_Click_1"/>
+        <Button Content="stocks" Grid.Column="2" Margin="30" Height="100" Click="Button_Click_2"/>
+    </Grid>
+</Window>
