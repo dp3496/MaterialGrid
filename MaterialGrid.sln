@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialGrid", "MaterialGrid\MaterialGrid.csproj", "{D465D596-B03A-4731-B439-ACF63DB7A12F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "DataBase\DataBase.csproj", "{EE0B71D4-81F9-4238-81ED-78A0484AAD94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D465D596-B03A-4731-B439-ACF63DB7A12F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D465D596-B03A-4731-B439-ACF63DB7A12F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D465D596-B03A-4731-B439-ACF63DB7A12F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE0B71D4-81F9-4238-81ED-78A0484AAD94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0B71D4-81F9-4238-81ED-78A0484AAD94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0B71D4-81F9-4238-81ED-78A0484AAD94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0B71D4-81F9-4238-81ED-78A0484AAD94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

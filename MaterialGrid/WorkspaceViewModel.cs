@@ -11,48 +11,48 @@ namespace MaterialGrid
 {
     public class WorkspaceViewModel
     {
-        DatabaseQueries dbq;
-        DataTable dt;
-        object[] obj, obj1;
+        DatabaseUtil dbq;
+        DataTable _data;
+        object[] _columns, _selectedItem;
         public WorkspaceViewModel(string tab_name)
         {
-            dbq = new DatabaseQueries(tab_name);
-            dt = Selected();
+            dbq = new DatabaseUtil(tab_name);
+            _data = Selected();
         }
 
-        public object[] col_name
+        public object[] Columns
         {
             get
             {
-                return obj;
+                return _columns;
             }
             set
             {
-                obj = value;
+                _columns = value;
             }
         }
 
-        public object[] col_data
+        public object[] SelectedItem
         {
             get
             {
-                return obj1;
+                return _selectedItem;
             }
             set
             {
-                obj1 = value;
+                _selectedItem = value;
             }
         }
 
-        public DataTable lists
+        public DataTable Data
         {
             get
             {
-                return dt;
+                return _data;
             }
             set
             {
-                dt = value;
+                _data = value;
             }
         }
 
@@ -63,22 +63,22 @@ namespace MaterialGrid
 
         public int Insert()
         {
-            dbq.col_val_data = col_data;
-            dbq.col_name_data = col_name;
+            dbq.SelectedRow = SelectedItem;
+            dbq.Columns = Columns;
             return dbq.InsertCommand();
         }
 
         public int Update()
         {
-            dbq.col_val_data = col_data;
-            dbq.col_name_data = col_name;
+            dbq.SelectedRow = SelectedItem;
+            dbq.Columns = Columns;
             return dbq.UpdateCommand();
         }
 
         public int Delete()
         {
-            dbq.col_val_data = col_data;
-            dbq.col_name_data = col_name;
+            dbq.SelectedRow = SelectedItem;
+            dbq.Columns = Columns;
             return dbq.DeleteCommand();
         }
     }

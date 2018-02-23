@@ -30,14 +30,14 @@ namespace MaterialGrid
             userslist.CanUserAddRows = false;
             _workspaceViewModel = new WorkspaceViewModel("USERS");
             DataContext = _workspaceViewModel;
-            _workspaceViewModel.col_name = userslist.Columns.Select(e => e.Header).ToArray();
+            _workspaceViewModel.Columns = userslist.Columns.Select(e => e.Header).ToArray();
         }
 
         public bool col_val()
         {
             if (userslist.SelectedItems.Count != 0)
             {
-                _workspaceViewModel.col_data = (userslist.SelectedItem as DataRowView).Row.ItemArray;
+                _workspaceViewModel.SelectedItem = (userslist.SelectedItem as DataRowView).Row.ItemArray;
                 return true;
             }
             else
@@ -84,7 +84,10 @@ namespace MaterialGrid
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            _workspaceViewModel.lists = _workspaceViewModel.Selected();
+            _workspaceViewModel.Data = _workspaceViewModel.Selected();
+            //InitializeComponent();
+            //userslist.Items.Refresh();
+            userslist.ItemsSource = _workspaceViewModel.Selected().DefaultView;
             DataContext = _workspaceViewModel;
         }
 

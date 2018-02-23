@@ -1,0 +1,7 @@
+C:\Users\durga.naganaboina\source\repos\MaterialGrid\DataBase\obj\Debug\DataBase.csprojResolveAssemblyReference.cache
+C:\Users\durga.naganaboina\source\repos\MaterialGrid\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+C:\Users\durga.naganaboina\source\repos\MaterialGrid\DataBase\bin\Debug\DataBase.dll
+C:\Users\durga.naganaboina\source\repos\MaterialGrid\DataBase\bin\Debug\DataBase.pdb
+C:\Users\durga.naganaboina\source\repos\MaterialGrid\DataBase\obj\Debug\DataBase.dll
+C:\Users\durga.naganaboina\source\repos\MaterialGrid\DataBase\obj\Debug\DataBase.pdb
+C:\Users\durga.naganaboina\source\repos\MaterialGrid\DataBase\bin\Debug\DataBase.dll.config

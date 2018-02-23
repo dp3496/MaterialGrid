@@ -19,3 +19,6 @@ C:\Users\durga.naganaboina\source\repos\MaterialGrid\MaterialGrid\obj\Debug\Main
 C:\Users\durga.naganaboina\source\repos\MaterialGrid\MaterialGrid\obj\Debug\stocks.g.cs
 C:\Users\durga.naganaboina\source\repos\MaterialGrid\MaterialGrid\obj\Debug\stocks.baml
 C:\Users\durga.naganaboina\source\repos\MaterialGrid\MaterialGrid\obj\Debug\MaterialGrid.csprojResolveAssemblyReference.cache
+C:\Users\durga.naganaboina\source\repos\MaterialGrid\MaterialGrid\bin\Debug\DataBase.dll
+C:\Users\durga.naganaboina\source\repos\MaterialGrid\MaterialGrid\bin\Debug\DataBase.pdb
+C:\Users\durga.naganaboina\source\repos\MaterialGrid\MaterialGrid\bin\Debug\DataBase.dll.config

@@ -29,14 +29,14 @@ namespace MaterialGrid
             stockslist.CanUserAddRows = false;
             _workspaceViewModel = new WorkspaceViewModel("STOCKS");
             this.DataContext = _workspaceViewModel;
-            _workspaceViewModel.col_name = stockslist.Columns.Select(e => e.Header).ToArray();
+            _workspaceViewModel.Columns = stockslist.Columns.Select(e => e.Header).ToArray();
         }
 
         public bool col_val()
         {
             if (stockslist.SelectedItems.Count != 0)
             {
-                _workspaceViewModel.col_data = (stockslist.SelectedItem as DataRowView).Row.ItemArray;
+                _workspaceViewModel.SelectedItem = (stockslist.SelectedItem as DataRowView).Row.ItemArray;
                 return true;
             }
             else

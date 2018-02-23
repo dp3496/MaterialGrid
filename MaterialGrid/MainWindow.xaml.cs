@@ -26,7 +26,7 @@ namespace MaterialGrid
     public partial class MainWindow : Window
     {
         string Constr = ConfigurationManager.ConnectionStrings["ConString"].ConnectionString;
-        DatabaseQueries dbq = new DatabaseQueries("");
+        DatabaseUtil dbq = new DatabaseUtil("");
         public MainWindow()
         {
             InitializeComponent();

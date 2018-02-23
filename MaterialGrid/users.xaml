@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel>
             <Grid Margin="10">
-                <DataGrid Name="userslist" AutoGenerateColumns="False" ItemsSource="{Binding lists, Mode=TwoWay}">
+                <DataGrid Name="userslist" AutoGenerateColumns="False" ItemsSource="{Binding Data, Mode=TwoWay}">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
                         <DataGridTextColumn Header="Name" Binding="{Binding NAME}"/>
