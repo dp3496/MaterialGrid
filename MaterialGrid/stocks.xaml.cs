@@ -77,7 +77,9 @@ namespace MaterialGrid
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            
+            _workspaceViewModel.Data = _workspaceViewModel.Selected();
+            DataContext = null;
+            DataContext = _workspaceViewModel;
         }
 
         public void Verify(int res, string cmd)

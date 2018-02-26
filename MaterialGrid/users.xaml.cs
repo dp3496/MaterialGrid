@@ -85,9 +85,7 @@ namespace MaterialGrid
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             _workspaceViewModel.Data = _workspaceViewModel.Selected();
-            //InitializeComponent();
-            //userslist.Items.Refresh();
-            userslist.ItemsSource = _workspaceViewModel.Selected().DefaultView;
+            DataContext = null;
             DataContext = _workspaceViewModel;
         }
 
